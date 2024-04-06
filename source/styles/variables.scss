@@ -1,0 +1,175 @@
+$middle-desktop-width: 1441px;
+$small-desktop-width: 1281px;
+$tablet-width: 1080px;
+$mobile-width: 576px;
+
+$breakpoints: (
+	'mdw': $middle-desktop-width,
+	'sdw': $small-desktop-width,
+	'tw': $tablet-width,
+	'mw': $mobile-width
+);
+$breakpoint-multipliers: (
+	'mdw': 0.95,
+	'sdw': 0.8,
+	'tw': 0.75,
+	'mw': 0.65
+);
+
+$container-width: 1568px;
+$fluid-container-max-width: 1920px;
+$container-padding: 1rem;
+
+// initial gap for layouting
+$default-layout-gap: 0;
+
+$padding-values: (
+	// 1px
+	'0-1': 0.1rem,
+	// 8px
+	'0-5': 0.5rem,
+	// 16px
+	'1': 1rem,
+	'0': 0
+);
+$specific-padding-breakpoints: (
+	'0': (
+		'mdw',
+		'tw',
+		'mw'
+	),
+	'1': (
+		'mw'
+	)
+);
+
+$margin-values: (
+	'0': 0,
+	'auto': auto,
+	// 4px
+	'0-25': 0.25rem,
+	// 8px
+	'0-5': 0.5rem,
+	// 12px
+	'0-75': 0.75rem,
+	// 16px
+	'1': 1rem,
+	// 24px
+	'1-5': 1.5rem
+);
+
+$specific-margin-breakpoints: (
+	'0': (
+		'sdw',
+		'mdw',
+		'tw',
+		'mw'
+	),
+	'auto': (
+		'mdw',
+		'tw',
+		'mw'
+	),
+	'3': (
+		'tw'
+	)
+);
+
+// .gap{direction}{-breakpoint}-value =>
+// .gap-lg-0 => gap: 0; (after lg breakpoint)
+// directions: ('', '-h', '-v')
+$layout-gaps: (
+	'0': 0,
+	'4px': 4px,
+	'0-5': 0.5rem,
+	'0-75': 0.75rem,
+	'1': 1rem,
+	'1-5': 1.5rem,
+	'2': 2rem,
+	'3': 3rem,
+	'12': 12px
+);
+
+// .w{-breakpoint}-{value} =>
+// .w-lg-100 => width: 100%; (after lg breakpoint)
+$width-sizing-options: (
+	'100': 100%
+);
+
+// .h{-breakpoint}-{value} =>
+// .h-lg-100 => height: 100%; (after lg breakpoint)
+$height-sizing-options: (
+	'100': 100%,
+	'100vh': 100vh,
+	'250px': 250px
+);
+
+// .background-{key} => .background-white => background-color: #fff;
+// .color-{key} => .color-white => color: #fff;
+$colors: (
+	'white': #fff,
+	'black': #141d21
+);
+// global colors
+:root {
+	--color-white: #fff;
+	--color-black: #141d21;
+}
+
+// .opc-{value} => .opc-72 => opacity: 0.72;
+$opacities: (
+	'1': 1,
+	'0-5': 0.5,
+	'0-8': 0.8,
+	'72': 0.72
+);
+
+// .fs{-breakpoint}-{value} =>
+// .fs-lg-1-25 => font-size: 1.25rem; (after lg breakpoint)
+$font-sizes: (
+	'0-75': 0.75rem,
+	'0-875': 0.875rem,
+	'1': 1rem,
+	'1-125': 1.125rem,
+	'1-25': 1.25rem,
+	'1-5': 1.5rem,
+	'2': 2rem,
+	'2-5': 2.5rem,
+	'3': 3rem,
+	'3-5': 3.5rem,
+	'4-5': 4.5rem,
+	'5-5': 5.5rem,
+	'6-5': 6.5rem
+);
+$font-size-breakpoint-multipliers: (
+	'mdw': 0.95,
+	'sdw': 0.8,
+	'tw': 0.75
+);
+
+// .lh-{value} => .lh-75 => line-height: 75%;
+$line-heights: (
+	'75': 75%,
+	'88': 88%,
+	'100': 100%,
+	'124': 124%,
+	'133': 133%
+);
+
+// .ls-{value} => .ls-1 => letter-spacing: 1px;
+$letter-spacings: (
+	'initial': initial,
+	'1': 1px,
+	'2': 2px,
+	'5': 0.05em,
+	'0-02': 0.02em
+);
+
+// .fw-{value} => .fw-400 => font-weight: 400;
+$font-weights: (
+	'300': 300,
+	'400': 400,
+	'500': 500,
+	'600': 600,
+	'700': 700
+);

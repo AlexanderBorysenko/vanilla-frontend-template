@@ -1,0 +1,21 @@
+{
+  "name": "vanilla-development-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "sass": "^1.69.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-sass-glob-import": "^3.0.2"
+  },
+  "dependencies": {
+    "swiper": "^11.0.7"
+  }
+}

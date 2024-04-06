@@ -1,0 +1,7 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: clip;
+	@media (max-width: $middle-desktop-width) {
+		font-size: 14px;
+	}
+}
