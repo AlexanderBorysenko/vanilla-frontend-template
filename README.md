@@ -1,1 +1,3 @@
 # vanilla-frontend-template
+
+test
