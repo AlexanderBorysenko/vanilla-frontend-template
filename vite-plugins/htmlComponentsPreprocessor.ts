@@ -194,7 +194,7 @@ function handleHTMLComponentsWithInnerHTML(
     html: string
 ): string {
     const componentWithInnerTagsRegex = new RegExp(
-        `<(${componentNameRegexPart()})[\\s]([^>]*)>([\\s\\S]*?)<\\/(${componentNameRegexPart()})>`,
+        `<(${componentNameRegexPart()})[\\s]*([^>]*)?>([\\s\\S]*?)<\\/(${componentNameRegexPart()})>`,
         'g'
     );
 
