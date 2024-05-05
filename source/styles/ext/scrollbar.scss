@@ -1,14 +1,20 @@
 ::-webkit-scrollbar {
-	width: 2px;
-}
-::-webkit-scrollbar-track {
-	background: #939397;
-}
-::-webkit-scrollbar-thumb {
-	background: #ffb017;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
 }
 // for firefox
 * {
-	scrollbar-color: #ffb017 #939397;
 	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-accent);
+	border-radius: 8px;
 }

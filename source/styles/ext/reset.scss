@@ -7,14 +7,13 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol {
 	list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-	scroll-behavior: smooth;
 	-moz-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
@@ -40,8 +39,15 @@ picture {
 input,
 button,
 textarea,
-select {
+select,
+a {
 	font: inherit;
+	outline: none;
+	background: none;
+	border: none;
+}
+input {
+	width: 100%;
 }
 
 :target {
