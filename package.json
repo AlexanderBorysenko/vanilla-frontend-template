@@ -16,6 +16,7 @@
     "vite-plugin-sass-glob-import": "^3.0.2"
   },
   "dependencies": {
+    "corner-smoothing": "^0.1.5",
     "swiper": "^11.0.7"
   }
 }

@@ -17,3 +17,12 @@ export const isInViewportByOffsetTopAndHeight = (offsetTop: number, height: numb
 
     return elementTopVisible || elementBottomVisible || elementFullyVisible;
 }
+
+export const initIsInViewportElements = () => {
+    const elements = document.querySelectorAll('.check-in-viewport');
+    elements.forEach((element) => {
+        if (isInViewport(element as HTMLElement)) {
+            (element as HTMLElement).classList.add('is-visible');
+        }
+    });
+}

@@ -6,6 +6,6 @@ export const phoneMaskValue = (value: string): string => {
     }
     value = value.replace(/^\+1/, '');
     let x = value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-    value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    value = !x ? '' : (!x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : ''));
     return countryCode + value;
 }

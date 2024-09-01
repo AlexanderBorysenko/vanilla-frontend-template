@@ -1,11 +1,17 @@
 html {
 	scroll-behavior: initial;
 	overflow-x: clip;
+
+	// adjust font size for different screen sizes
+	// 16 / (Figma design width) * 100 [vw]
 	font-size: 16px;
-	@media (min-width: 1900px) {
-		font-size: 18px;
+	@media (max-width: 1920px) {
+		font-size: 0.925925925925926vw;
 	}
-	@media (max-width: $middle-desktop-width) {
-		font-size: 14px;
+	@media (max-width: $tablet-width) {
+		font-size: 1.1vw;
+	}
+	@media (max-width: $mobile-width) {
+		font-size: 5vw;
 	}
 }
